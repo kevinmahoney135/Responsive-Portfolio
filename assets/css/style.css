@@ -313,4 +313,8 @@ input[type=submit] {
     background: #4aaaa5;
     border: 0 none;
   }
+
+  .work {
+    width: 250px;
+  }
 }
