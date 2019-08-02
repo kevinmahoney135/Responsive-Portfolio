@@ -180,10 +180,13 @@ h3, h2 {
 
 #contact-form ul {
   margin-bottom: 20px;
+  padding-left: 0%;
+  width: 100%;
 }
 
 #contact-form li {
   margin-bottom: 10px;
+  list-style-type: none;
 }
 
 label,
@@ -216,11 +219,98 @@ input[type=submit] {
   border: 0 none;
 }
 
-@media screen and (max-width: 768) {
-  .container max-width: 600px;
-  .main-section max-width: 600px;
+@media screen and (max-width: 980px) {
+  nav {
+    height: 100%;
+    margin-bottom: 10px;
+    padding-right: 30px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 980px;
+  }
+  .main-section {
+    max-width: 980px;
+  }
 }
-@media screen and (max-width: 376) {
-  .container width: 300px;
-  .mains-ection width: 300px;
+
+@media screen and (max-width: 768px) {
+  nav {
+    height: 100%;
+    margin-bottom: 10px;
+    padding-right: 30px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 768px;
+  }
+
+  .main-section {
+    max-width: 768px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  #masthead {
+    margin-left: 0%;  
+    float: left;
+  }
+
+  h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+  }
+
+  nav {
+    clear: both;
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    padding-right: 30px;
+    text-align: center;
+  }
+
+  .container {
+    float: left;
+    margin-left: 0%;
+    max-width: 640px;
+  } 
+
+  .main-section {
+    max-width: 640px;
+  }
+
+  body {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  #logo {
+    float: left;
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+ }
+
+  .auth-image {
+    clear: left;
+    width: 100%;
+    margin: auto;
+  }
+
+  input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+  }
 }
